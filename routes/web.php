@@ -1,24 +1,15 @@
 <?php
 
-use App\Http\Controllers\PaymentInvoice;
-use App\Http\Controllers\StudioDetailController;
+use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
+Route::get('/login', function () {
+	return view('app');
+});
 
 Route::get('/', function () {
 	return view('index');
 });
-
 
 Route::get('/termos-e-condicoes-de-uso-clin', function () {
 	return view('clin.termsAndConditions');
@@ -44,7 +35,7 @@ Route::get('/dashboard', function () {
 	Route::get('/home', 'HomeController@index')->name('home');
 })->middleware(['auth'])->name('dashboard');
 
-require __DIR__ . '/auth.php';
+// require __DIR__ . '/auth.php';
 
 
 
@@ -72,3 +63,37 @@ Route::post('/payment/{id}/paymentCard', [PaymentInvoice::class, 'paymentInvoice
 //email
 Route::get('/email', [PaymentInvoice::class, 'template']);
 Route::get('/subscriptionEmail/{id}', [PaymentInvoice::class, 'subscriptionEmail']);
+
+
+Route::get('/teste', [TesteController::class, 'index']);
+
+Route::resource('conversation', ConversationController::class);
+
+
+/*
+|--------------------------------------------------------------------------
+| Web Routes
+|--------------------------------------------------------------------------
+|
+| Here is where you can register web routes for your application. These
+| routes are loaded by the RouteServiceProvider and all of them will
+| be assigned to the "web" middleware group. Make something great!
+|
+*/
+
+Route::get('/', function () {
+    return view('index');
+});;
+
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware(['auth', 'verified'])->name('dashboard');
+
+Route::middleware('auth')->group(function () {
+    Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
+    Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
+    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+});
+
+require __DIR__.'/auth.php';
+require __DIR__.'/exampleTemplates.php';

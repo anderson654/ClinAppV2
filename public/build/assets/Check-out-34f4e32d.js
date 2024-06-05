@@ -1,0 +1,1 @@
+new Choices("#city",{allowHTML:!0,removeItemButton:!0});new Choices("#zip-code",{allowHTML:!0,removeItemButton:!0});new Choices("#state",{allowHTML:!0,removeItemButton:!0});new Choices("#country",{allowHTML:!0,removeItemButton:!0});

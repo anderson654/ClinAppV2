@@ -1,0 +1,1 @@
+(function(e){e("#mySlider").slider({range:!0,min:10,max:999,values:[200,500],slide:function(i,l){e("#price").val("$"+l.values[0]+" - $"+l.values[1])}}),e("#price").val("$"+e("#mySlider").slider("values",0)+" - $"+e("#mySlider").slider("values",1))})(jQuery);

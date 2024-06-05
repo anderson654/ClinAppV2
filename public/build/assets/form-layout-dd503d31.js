@@ -1,0 +1,1 @@
+(function(){document.addEventListener("DOMContentLoaded",function(){var a=document.querySelectorAll("[data-trigger]");for(let e=0;e<a.length;++e){var l=a[e];new Choices(l,{allowHTML:!0,placeholderValue:"This is a placeholder set in the config",searchPlaceholderValue:"Search"})}})})();

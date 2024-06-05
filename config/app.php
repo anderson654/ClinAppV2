@@ -53,7 +53,7 @@ return [
     ##comentado para local usado para fazer testes fora
     // 'url' => env('APP_URL', 'https://clin.com.br'),
     // 'frontend_url' => env('FRONTEND_URL', 'https://clin.com.br'),
-    'asset_url' => env('ASSET_URL', 'https://clin.app.br'),
+    'asset_url' => env('ASSET_URL'),
 
     /*
     |--------------------------------------------------------------------------
