@@ -1,0 +1,400 @@
+:root {
+    --primary-color: #f8ffff;
+    --second-color: #07770ddf;
+    --third-color: #06690b;
+}
+
+text {
+    display: none;
+}
+
+
+/* Box sizing reset */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+text {
+    visibility: hidden;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: Poppins, 'Roboto', 'sans-serif' !important;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1 0 auto;
+    background: #ececec
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px;
+    overflow: none;
+}
+
+.container:before,
+.container:after {
+    content: none !important;
+}
+
+.app-header {
+    background-color: var(--primary-color);
+    box-shadow: 3px 3px 10px #888;
+}
+
+.app-header .logo {
+    width: 100px;
+}
+
+.app-header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 10px;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #f0ffff;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #111;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+
+/* Notification div */
+
+.subheader {
+    background: linear-gradient(90deg, rgb(0, 158, 0) 0%, rgba(0, 202, 0, 1) 100%) !important;
+    color: #fff;
+    box-shadow: 3px 3px 10px #888;
+    width: 90%;
+    margin: 0 auto 16px auto;
+    font-size: 14px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.subheader p {
+    margin: 4px;
+}
+
+.subheader .fa-bell {
+    font-size: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+
+.grid a,
+.grid a:link,
+.grid a:focus {
+    text-decoration: none;
+    color: #666;
+}
+
+.grid a:visited {
+    text-decoration: none;
+}
+
+.grid a:active {
+    color: #fff;
+    text-decoration: none;
+}
+
+.grid a .item {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 1px #ccc solid;
+    border-radius: 29px;
+    box-shadow: 0px 6px #ccc;
+    padding: 10px;
+}
+
+.grid a .item:active {
+    background-color: #1F80EA;
+    box-shadow: 0 2px #666;
+    transform: translateY(4px);
+}
+
+.grid a .item h4 {
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+    text-align: center;
+}
+
+
+/* NOT IN USE YET */
+
+
+/* .grid a .item p {
+    font-size: 14px;
+    color: var(--second-color);
+    font-weight: bold;
+    margin-bottom: 20px;
+} */
+
+
+/* END */
+
+.today {
+    width: 120px;
+    display: inline-block;
+    align-self: left !important;
+    padding-bottom: 10px;
+}
+
+.hide {
+    visibility: hidden;
+}
+
+.grid a .item img {
+    width: 80px;
+    align-self: center;
+}
+
+
+/* Rodape */
+
+.app-footer {
+    flex-shrink: 0;
+    background: linear-gradient(90deg, #1F80EA, rgb(66, 53, 255) 100%) !important;
+    /* color: var(--second-color); */
+    color: #fff;
+    padding: 10px;
+    font-size: 14px;
+    margin-top: 10px;
+    /* left: 0; */
+    bottom: 0;
+    position: sticky;
+    width: 100%;
+    /* border-radius: 29px 29px 0 0; */
+}
+
+.app-footer ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+    margin-bottom: 0px;
+    clear: both;
+}
+
+.app-footer a,
+.app-footer a:link,
+.app-footer a:focus {
+    text-decoration: none;
+    color: #fff;
+}
+
+.app-footer a:visited {
+    text-decoration: none;
+}
+
+.app-footer a:active {
+    color: #666;
+    text-decoration: none;
+}
+
+.app-footer ul li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.app-footer ul li i {
+    font-size: 22px;
+}
+
+.app-footer p {
+    font-weight: bold;
+    font-family: 'Roboto', 'sans-serif';
+    font-size: 15px;
+    margin: 0 0 0px;
+}
+
+
+/* PAGES STYLES */
+
+.bold {
+    font-weight: bold;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 29px;
+    box-shadow: 0px 3px #ccc;
+    margin: 5px 0;
+    padding: 10px;
+    color: #666;
+    /* margin-bottom: 20px; */
+}
+
+.card-title {
+    border-bottom: 1px solid #ccc;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+
+/* .card-body {
+    background-color: rgb(245, 245, 245);
+} */
+
+.card-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: bold;
+    padding: 5px;
+}
+
+
+/* .card-item .card-label {
+    font-size: px;
+} */
+
+.advice {
+    border-radius: 0px;
+    box-shadow: none;
+}
+
+.advice h1 {
+    font-weight: 900;
+    font-style: italic;
+}
+
+
+/* PROFESSIONAL AVAILABLE DAYS */
+
+.check {
+    /* padding: 15px; */
+    margin: 10px 5px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    /* line-height: 0.5; */
+}
+
+.check:first-child {
+    margin-top: 20px;
+}
+
+.line-adjust {
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+.card-check {
+    /* Double-sized Checkboxes */
+    -ms-transform: scale(2);
+    -moz-transform: scale(2);
+    -webkit-transform: scale(2);
+    -o-transform: scale(2);
+    transform: scale(2);
+    margin-right: 15px !important;
+    margin-bottom: 5px !important;
+}
+
+input[type="checkbox"]:checked {
+    background-color: var(--second-color);
+}
+
+#btn-atualizar {
+    width: 95%;
+    border-radius: 15px;
+    font-weight: bold;
+}
+
+#btn-atualizar:active {
+    background-color: var(--third-color)
+}
+
+.btn {
+    width: 100%;
+    border-radius: 29px !important;
+}
+
+.btn-success {
+    background: linear-gradient(90deg, rgb(0, 158, 0) 0%, rgba(0, 202, 0, 1) 100%) !important;
+}
+
+.btn-primary {
+    background: linear-gradient(90deg, #1F80EA, rgb(66, 53, 255) 100%) !important;
+}
+
+.btn-danger {
+    background: linear-gradient(90deg, #FF0022, #D81C35);
+}
+
+.btn:active {
+    transform: scale(0.90);
+}
+
+.btn-success {
+    background-color: var(--second-color) !important;
+}
+
+input.form-control {
+    border-radius: 29px;
+}
+
+select.form-control {
+    border-radius: 29px;
+}

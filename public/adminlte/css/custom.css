@@ -1,0 +1,300 @@
+#wrapper {
+	position: relative;
+}
+
+.ui_tpicker_time_input {
+	width: 100%;
+}
+
+/* AJUSTES LOGIN BOX*/
+.login-box {
+	margin: auto;
+	width: 510px;
+}
+
+.login-box img {
+	width: 50%;
+}
+
+/* FIM AJUSTES LOGIN BOX*/
+/* AJUSTES TELA LOGIN - REC SENHA - CADASTRO  */
+.topo {
+	//background-color: white;
+	display: block;
+	text-align: center;
+	padding: 15px;
+}
+
+.topo img {
+	width: 20%;
+	margin-top: 2%;
+}
+
+.rodape {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: 300px;
+	/* altura do rodape */
+	background: white;
+	text-align: center;
+	padding: 25px 15px 10px 15px;
+	border-top: 6px solid #01272f;
+	z-index: 1000;
+}
+
+.rodape img {
+	padding: 0 15px 0 15px;
+	height: 45px;
+	width: auto;
+}
+
+.creditos {
+	padding: 25px 0 0 0;
+	color: #929292;
+	font-size: 16px;
+	text-align: center;
+}
+
+.creditos a {
+	color: #929292;
+}
+
+.creditos a:hover {
+	color: #3c8dbc;
+}
+
+
+/*.page-header-fixed {
+background: #343434 no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+	
+}*/
+
+/*CORES*/
+.bg-ch-red,
+.cleanhouse-red {
+	background-color: #ad0000;
+	color: #fff;
+}
+
+.cleanhouse-red i {
+	color: #fff;
+}
+
+.cleanhouse-yellow {
+	background-color: #eded00;
+}
+
+.cleanhouse-yellow i {
+	color: #333;
+}
+
+@media (max-width:1180px) and (min-width:992px) {
+	.large-date {
+		float: none !important;
+	}
+}
+
+@media (max-width:1270px) and (min-width:992px) {
+	.clean-options {
+		width: 100%;
+	}
+
+	.clean-options a,
+	.clean-options button {
+		width: 100%;
+		margin-top: 5px;
+	}
+}
+
+/* INICIO AJUSTES TELA LOGIN MOBILE  */
+@media (max-width:767px) {
+	.login-box {
+		width: 95%;
+		margin-top: 4px;
+	}
+
+	.topo img {
+		width: 75%;
+		margin-top: 1%;
+	}
+}
+
+/* FIM AJUSTES TELA LOGIN MOBILE  */
+/* INICIO AJUSTE TOP BAR MOBILE  */
+.skin-black-light .main-header>.logo {
+	background-color: #fff !important;
+}
+
+/* FIM AJUSTE TOP BAR MOBILE  */
+
+/* SHOW_PROFESSIONAL */
+
+.prof-data {
+	background-color: white;
+	border-radius: 19px;
+	box-shadow: 3px 3px #dedede;
+	padding: 16px
+}
+
+input.form-control,
+select.form-control {
+	border-radius: 9.5px
+}
+
+nav ul {
+	-webkit-font-smoothing: antialiased;
+	text-shadow: 0 1px 0 #FFF;
+	list-style: none;
+	margin-bottom: 0;
+	padding: 0;
+	width: 100%;
+	background-color: #fff;
+}
+
+nav li {
+	float: left;
+	margin-bottom: -20px;
+	padding: 0;
+	position: relative;
+	min-width: 25%;
+}
+
+nav a {
+	color: #444;
+	display: block;
+	font: bold 13px/50px sans-serif;
+	text-decoration: none;
+	-webkit-transition: all .25s ease;
+	-moz-transition: all .25s ease;
+	-ms-transition: all .25s ease;
+	-o-transition: all .25s ease;
+	transition: all .25s ease;
+
+}
+
+nav .dropdown:after {
+	content: ' ▶';
+}
+
+nav .dropdown:hover:after {
+	content: ' \25bc'
+}
+
+nav li:hover a {
+	background: #fff;
+
+}
+
+nav li ul {
+	float: left;
+	left: 0;
+	opacity: 0;
+	position: absolute;
+	top: 35px;
+	visibility: hidden;
+	z-index: 1;
+	-webkit-transition: all .25s ease;
+	-moz-transition: all .25s ease;
+	-ms-transition: all .25s ease;
+	-o-transition: all .25s ease;
+	transition: all .25s ease;
+}
+
+nav li:hover ul {
+	opacity: 1;
+	top: 50px;
+	visibility: visible;
+	text-align: center;
+}
+
+nav li ul li {
+	float: none;
+	width: 100%;
+	height: 100%;
+}
+
+nav li ul a:hover {
+	background: #fff;
+}
+
+/* Clearfix */
+
+.cf:after,
+.cf:before {
+	content: "";
+	display: table;
+}
+
+.cf:after {
+	clear: both;
+}
+
+.cf {
+	zoom: 1;
+}
+
+.progress-bar-striped {
+	background-color: linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 95%, transparent 95%, transparent);
+	background-size: 1rem 1rem;
+
+}
+
+.bg-danger {
+	background-color: #dc3545 !important;
+}
+
+.bg-warning {
+	background-color: #ffc107 !important;
+}
+
+.bg-sucess {
+	background-color: #28a745 !important;
+}
+
+.progress-bar {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	color: #fff;
+
+	background-color: #007bff;
+	transition: width .6s ease;
+}
+
+.progress-bar-animated {
+	animation: progress-bar-stripes 1.5s linear infinite;
+	-webkit-animation: progress-bar-stripes 1.5s linear infinite;
+}
+
+.progress,
+.progress>.progress-bar,
+.progress .progress-bar,
+.progress>.progress-bar .progress-bar {
+	border-radius: 6px;
+}
+
+.textmid {
+	font: 13px/50px sans-serif;
+	color: white;
+	text-align: center;
+	position: relative;
+}
+
+.textblack {
+	font: 13px/50px sans-serif;
+	color: black;
+	text-align: center;
+	position: relative;
+}
